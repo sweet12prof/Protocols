@@ -1,0 +1,20 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Chris Nutsukpui/rx_2/rx_2.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv,1695496625,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv,,ifa;ifa2,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv,1695500832,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/test.sv,,rxD,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/test.sv,1695499924,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/top.sv,,test,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/top.sv,1695501624,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv,,top,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv,1695502732,systemVerilog,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/TxD.sv,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv,,typedefs,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv,1695475182,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv,,ClockDiv,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv,1695472001,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv,,SegDecoder,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv,1695471998,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv,,SevenSegment,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/TxD.sv,1695502837,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/txDifaWrap.sv,,TxD,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv,1695466488,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv,,anodeDecoder,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv,1695472001,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv,,ctr_2bit,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/loopBackVrify.sv,1695503681,systemVerilog,,,,loopBackVrify,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv,1695470541,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/TxD.sv,,mux8,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv,1695465383,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv,,synthTop,,uvm,,,,,,
+C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/txDifaWrap.sv,1695501044,systemVerilog,,C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/loopBackVrify.sv,,txDifaWrap,,uvm,,,,,,

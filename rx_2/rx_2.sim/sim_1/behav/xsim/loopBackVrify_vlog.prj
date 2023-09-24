@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../rx_2.srcs/sources_1/imports/new/ifa.sv" \
+"../../../../rx_2.srcs/sources_1/imports/new/typedefs.sv" \
+"../../../../rx_2.srcs/sources_1/imports/new/rxD.sv" \
+"../../../../rx_2.srcs/sources_1/imports/new/test.sv" \
+"../../../../rx_2.srcs/sources_1/imports/new/top.sv" \
+"../../../../rx_2.srcs/sources_1/new/ctr_2bit.sv" \
+"../../../../rx_2.srcs/sources_1/new/SevenSegment.sv" \
+"../../../../rx_2.srcs/sources_1/new/ClockDiv.sv" \
+"../../../../rx_2.srcs/sources_1/new/SegDecoder.sv" \
+"../../../../rx_2.srcs/sources_1/new/anodeDecoder.sv" \
+"../../../../rx_2.srcs/sources_1/new/mux8.sv" \
+"../../../../rx_2.srcs/sources_1/new/TxD.sv" \
+"../../../../rx_2.srcs/sources_1/new/txDifaWrap.sv" \
+"../../../../rx_2.srcs/sources_1/new/loopBackVrify.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

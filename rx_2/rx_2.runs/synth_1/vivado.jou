@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Sep 23 21:37:39 2023
+# Process ID: 7924
+# Current directory: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/synth_1
+# Command line: vivado.exe -log synthTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source synthTop.tcl
+# Log file: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/synth_1/synthTop.vds
+# Journal file: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/synth_1\vivado.jou
+# Running On: sweet12prof, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 6, Host memory: 8403 MB
+#-----------------------------------------------------------
+source synthTop.tcl -notrace

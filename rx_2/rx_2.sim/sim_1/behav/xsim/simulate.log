@@ -1,0 +1,171 @@
+Time resolution is 1 ps
+ERROR: Assertion failed. 
+Time: 139990 ns Started: 1070 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 192070 ns Started: 53150 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 313610 ns Started: 174690 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 365690 ns Started: 226770 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 487230 ns Started: 348310 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 539310 ns Started: 400390 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 660850 ns Started: 521930 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 712930 ns Started: 574010 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 834470 ns Started: 695550 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 886550 ns Started: 747630 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1008090 ns Started: 869170 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1060170 ns Started: 921250 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1181710 ns Started: 1042790 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1233790 ns Started: 1094870 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1355330 ns Started: 1216410 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1407410 ns Started: 1268490 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1528950 ns Started: 1390030 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1581030 ns Started: 1442110 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1702570 ns Started: 1563650 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1754650 ns Started: 1615730 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1876190 ns Started: 1737270 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 1928270 ns Started: 1789350 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2049810 ns Started: 1910890 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2101890 ns Started: 1962970 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2223430 ns Started: 2084510 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2275510 ns Started: 2136590 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2397050 ns Started: 2258130 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2449130 ns Started: 2310210 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2570670 ns Started: 2431750 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2622750 ns Started: 2483830 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2744290 ns Started: 2605370 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2796370 ns Started: 2657450 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2917910 ns Started: 2778990 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 2969990 ns Started: 2831070 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3091530 ns Started: 2952610 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3143610 ns Started: 3004690 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3265150 ns Started: 3126230 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3317230 ns Started: 3178310 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3438770 ns Started: 3299850 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3490850 ns Started: 3351930 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3612390 ns Started: 3473470 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3664470 ns Started: 3525550 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3786010 ns Started: 3647090 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3838090 ns Started: 3699170 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 3959630 ns Started: 3820710 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4011710 ns Started: 3872790 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4133250 ns Started: 3994330 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4185330 ns Started: 4046410 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4306870 ns Started: 4167950 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4358950 ns Started: 4220030 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4480490 ns Started: 4341570 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4532570 ns Started: 4393650 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4654110 ns Started: 4515190 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4706190 ns Started: 4567270 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4827730 ns Started: 4688810 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 4879810 ns Started: 4740890 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5001350 ns Started: 4862430 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5053430 ns Started: 4914510 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5174970 ns Started: 5036050 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5227050 ns Started: 5088130 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5348590 ns Started: 5209670 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5400670 ns Started: 5261750 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5522210 ns Started: 5383290 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5574290 ns Started: 5435370 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5695830 ns Started: 5556910 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5747910 ns Started: 5608990 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5869450 ns Started: 5730530 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 5921530 ns Started: 5782610 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6043070 ns Started: 5904150 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6095150 ns Started: 5956230 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6216690 ns Started: 6077770 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6268770 ns Started: 6129850 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6390310 ns Started: 6251390 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6442390 ns Started: 6303470 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6563930 ns Started: 6425010 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6616010 ns Started: 6477090 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6737550 ns Started: 6598630 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6789630 ns Started: 6650710 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6911170 ns Started: 6772250 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 6963250 ns Started: 6824330 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 7084790 ns Started: 6945870 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 7136870 ns Started: 6997950 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 7258410 ns Started: 7119490 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 7310490 ns Started: 7171570 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242
+ERROR: Assertion failed. 
+Time: 7432030 ns Started: 7293110 ns Scope: /loopBackVrify/receiver File: C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv Line:242

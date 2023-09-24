@@ -1,0 +1,1628 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Sep 23 10:30:31 2023
+# Process ID: 26156
+# Current directory: C:/Users/Chris Nutsukpui/rx_2
+# Command line: vivado.exe
+# Log file: C:/Users/Chris Nutsukpui/rx_2/vivado.log
+# Journal file: C:/Users/Chris Nutsukpui/rx_2\vivado.jou
+# Running On: sweet12prof, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 6, Host memory: 8403 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project {C:/Users/Chris Nutsukpui/rx_2/rx_2.xpr}
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Chris Nutsukpui/rx_2/rx_2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+set_property top synthTop [current_fileset]
+set_property top top [current_fileset]
+set_property top synthTop [current_fileset]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: synthTop
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1752.969 ; gain = 413.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'synthTop' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ifa' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ifa' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+ERROR: [Synth 8-660] unable to resolve 'nyif' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:30]
+ERROR: [Synth 8-6156] failed synthesizing module 'synthTop' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1828.223 ; gain = 489.035
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+5 Infos, 3 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: synthTop
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1828.223 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'synthTop' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ifa' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ifa' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rxD' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'ifa' with no modport [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:33]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:62]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'rxD' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'synthTop' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+WARNING: [Synth 8-87] always_comb on 'mCount_next_reg' did not result in combinational logic [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:65]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1850.879 ; gain = 22.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1873.758 ; gain = 45.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1873.758 ; gain = 45.535
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1873.758 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1968.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1982.133 ; gain = 153.910
+11 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1982.133 ; gain = 153.910
+close_design
+close [ open {C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv} w ]
+add_files {{C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv}}
+close [ open {C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv} w ]
+add_files {{C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv}}
+close [ open {C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv} w ]
+add_files {{C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv}}
+close [ open {C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv} w ]
+add_files {{C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv}}
+close [ open {C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv} w ]
+add_files {{C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv}}
+set_property top ClockDiv [current_fileset]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Chris Nutsukpui/rx_2/rx_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Chris Nutsukpui/rx_2/rx_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rxD
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synthTop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr_2bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegDecoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module anodeDecoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Chris Nutsukpui/rx_2/rx_2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.typedefs
+Compiling module xil_defaultlib.cb1
+Compiling module xil_defaultlib.ifa
+Compiling module xil_defaultlib.cb2
+Compiling module xil_defaultlib.test(myif=ifa_testToDesign)
+Compiling module xil_defaultlib.rxD(myif=ifa_designToTest)
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Chris Nutsukpui/rx_2/rx_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_behav -key {Behavioral:sim_1:Functional:top} -tclbatch {top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2003.328 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top ClockDiv [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'ClockDiv'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Chris Nutsukpui/rx_2/rx_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'ClockDiv' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Chris Nutsukpui/rx_2/rx_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ClockDiv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synthTop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr_2bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegment
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegDecoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module anodeDecoder
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Chris Nutsukpui/rx_2/rx_2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ClockDiv_behav xil_defaultlib.ClockDiv xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ClockDiv_behav xil_defaultlib.ClockDiv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClockDiv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ClockDiv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Chris Nutsukpui/rx_2/rx_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ClockDiv_behav -key {Behavioral:sim_1:Functional:ClockDiv} -tclbatch {ClockDiv.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source ClockDiv.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ClockDiv_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_force {/ClockDiv/clk} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/ClockDiv/rst} -radix hex {1 0ns}
+run 10 ns
+run 10 ns
+add_force {/ClockDiv/rst} -radix hex {0 0ns}
+run all
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2003.328 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open {C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv} w ]
+add_files {{C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv}}
+set_property top SevenSegment [current_fileset]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: SevenSegment
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+ERROR: [Synth 8-36] 'anOut' is not declared [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:47]
+INFO: [Synth 8-10285] module 'SevenSegment' is ignored due to previous errors [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:60]
+INFO: [Synth 8-9084] Verilog file 'C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv' ignored due to errors
+Failed to read verilog 'C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv'
+3 Infos, 3 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: SevenSegment
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2003.328 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+WARNING: [Synth 8-689] width (5) of port connection 'segIN' does not match port width (4) of module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:36]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+WARNING: [Synth 8-689] width (3) of port connection 'count' does not match port width (2) of module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+WARNING: [Synth 8-7137] Register ctr_reg in module ctr_2bit has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:32]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2003.328 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2003.328 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2003.328 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2003.328 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2057.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2058.504 ; gain = 55.176
+17 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2058.504 ; gain = 55.176
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: SevenSegment
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2067.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+WARNING: [Synth 8-689] width (5) of port connection 'segIN' does not match port width (4) of module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:36]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+WARNING: [Synth 8-689] width (3) of port connection 'count' does not match port width (2) of module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+WARNING: [Synth 8-7137] Register ctr_reg in module ctr_2bit has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:32]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2067.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2067.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2067.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2067.621 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2067.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2068.605 ; gain = 0.984
+17 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2068.605 ; gain = 0.984
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2096.922 ; gain = 28.316
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+WARNING: [Synth 8-689] width (5) of port connection 'segIN' does not match port width (4) of module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:36]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+WARNING: [Synth 8-7137] Register ctr_reg in module ctr_2bit has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:32]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2172.012 ; gain = 103.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2194.746 ; gain = 126.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2194.746 ; gain = 126.141
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2205.156 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2205.156 ; gain = 136.551
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: SevenSegment
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+WARNING: [Synth 8-689] width (5) of port connection 'segIN' does not match port width (4) of module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:36]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+WARNING: [Synth 8-7137] Register ctr_reg in module ctr_2bit has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:32]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2205.156 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2205.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2205.156 ; gain = 0.000
+17 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2205.156 ; gain = 0.000
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: SevenSegment
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+WARNING: [Synth 8-689] width (5) of port connection 'A' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'B' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'C' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'D' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'E' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'F' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'G' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'H' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+WARNING: [Synth 8-7137] Register ctr_reg in module ctr_2bit has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:32]
+WARNING: [Synth 8-7129] Port A[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port E[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port F[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port G[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port H[4] in module SevenSegment is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2205.156 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2205.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2205.156 ; gain = 0.000
+17 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2205.156 ; gain = 0.000
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: SevenSegment
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+WARNING: [Synth 8-689] width (5) of port connection 'A' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'B' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'C' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'D' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'E' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'F' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'G' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'H' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+WARNING: [Synth 8-7137] Register ctr_reg in module ctr_2bit has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:32]
+WARNING: [Synth 8-7129] Port A[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port E[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port F[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port G[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port H[4] in module SevenSegment is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2205.156 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2205.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2205.156 ; gain = 0.000
+17 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2205.156 ; gain = 0.000
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2205.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+WARNING: [Synth 8-689] width (5) of port connection 'A' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'B' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'C' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'D' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'E' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'F' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'G' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'H' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+WARNING: [Synth 8-7129] Port A[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port E[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port F[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port G[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port H[4] in module SevenSegment is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2205.461 ; gain = 0.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2228.352 ; gain = 23.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2228.352 ; gain = 23.195
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2242.855 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2242.855 ; gain = 37.699
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: SevenSegment
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2242.855 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+WARNING: [Synth 8-689] width (5) of port connection 'A' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'B' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'C' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'D' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'E' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'F' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'G' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+WARNING: [Synth 8-689] width (5) of port connection 'H' does not match port width (4) of module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:41]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+WARNING: [Synth 8-7129] Port A[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port E[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port F[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port G[4] in module SevenSegment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port H[4] in module SevenSegment is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2242.855 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2242.855 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2242.855 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2242.855 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2242.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2243.055 ; gain = 0.199
+17 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2243.055 ; gain = 0.199
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2243.055 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2243.055 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2246.566 ; gain = 3.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2246.566 ; gain = 3.512
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2260.973 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2260.973 ; gain = 17.918
+set_property top synthTop [current_fileset]
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+ERROR: [Synth 8-36] 'rst' is not declared [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:40]
+ERROR: [Synth 8-9250] cannot index into non-array type logic for 'rxData' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:47]
+ERROR: [Synth 8-9250] cannot index into non-array type logic for 'rxData' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:48]
+INFO: [Synth 8-10285] module 'synthTop' is ignored due to previous errors [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:54]
+INFO: [Synth 8-9084] Verilog file 'C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv' ignored due to errors
+Failed to read verilog 'C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv'
+refresh_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2260.973 ; gain = 0.000
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+ERROR: [Synth 8-9250] cannot index into non-array type logic for 'rxData' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:47]
+ERROR: [Synth 8-9250] cannot index into non-array type logic for 'rxData' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:48]
+INFO: [Synth 8-10285] module 'synthTop' is ignored due to previous errors [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:54]
+INFO: [Synth 8-9084] Verilog file 'C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv' ignored due to errors
+Failed to read verilog 'C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv'
+refresh_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2260.973 ; gain = 0.000
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+ERROR: [Synth 8-9250] cannot index into non-array type logic for 'rxData' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:47]
+ERROR: [Synth 8-9250] cannot index into non-array type logic for 'rxData' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:48]
+INFO: [Synth 8-10285] module 'synthTop' is ignored due to previous errors [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:54]
+INFO: [Synth 8-9084] Verilog file 'C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv' ignored due to errors
+Failed to read verilog 'C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv'
+refresh_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2260.973 ; gain = 0.000
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: synthTop
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+ERROR: [Synth 8-9250] cannot index into non-array type logic for 'rxData' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:47]
+ERROR: [Synth 8-9250] cannot index into non-array type logic for 'rxData' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:48]
+INFO: [Synth 8-10285] module 'synthTop' is ignored due to previous errors [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:54]
+INFO: [Synth 8-9084] Verilog file 'C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv' ignored due to errors
+Failed to read verilog 'C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv'
+3 Infos, 3 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: synthTop
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2260.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'synthTop' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ifa' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ifa' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rxD' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'ifa' with no modport [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:35]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:62]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'rxD' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'synthTop' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+WARNING: [Synth 8-87] always_comb on 'mCount_next_reg' did not result in combinational logic [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:65]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2260.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2260.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2260.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2260.973 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2260.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2261.086 ; gain = 0.113
+25 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2261.086 ; gain = 0.113
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50tcsg324-1
+Top: synthTop
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2261.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'synthTop' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ifa' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ifa' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rxD' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'ifa' with no modport [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:35]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:62]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'rxD' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'synthTop' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+WARNING: [Synth 8-87] always_comb on 'mCount_next_reg' did not result in combinational logic [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:65]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2261.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2261.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2261.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2261.086 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2262.234 ; gain = 1.148
+25 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2262.234 ; gain = 1.148
+set_property package_pin "" [get_ports [list  {anOut[7]}]]
+place_ports {SS_out[6]} T10
+place_ports {SS_out[5]} R10
+place_ports {SS_out[4]} K16
+place_ports {SS_out[3]} K13
+place_ports {SS_out[2]} P15
+place_ports {SS_out[1]} T11
+place_ports {SS_out[0]} L18
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SS_out[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SS_out[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SS_out[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SS_out[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SS_out[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SS_out[1]}]]
+set_property IOSTANDARD LVCMOS25 [get_ports [list {SS_out[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SS_out[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {anOut[7]} {anOut[6]} {anOut[5]} {anOut[4]} {anOut[3]} {anOut[2]} {anOut[1]} {anOut[0]}]]
+place_ports {anOut[7]} U13
+place_ports {anOut[6]} K2
+place_ports {anOut[5]} T14
+place_ports {anOut[4]} P14
+place_ports {anOut[3]} J14
+place_ports {anOut[2]} T9
+place_ports {anOut[1]} J18
+place_ports {anOut[0]} J17
+set_property package_pin "" [get_ports [list  clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rxSerial]]
+place_ports clk E3
+place_ports rst J15
+place_ports rxSerial C4
+file mkdir {C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new}
+close [ open {C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc}}
+set_property target_constrs_file {C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc} [current_fileset -constrset]
+save_constraints -force
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+CRITICAL WARNING: [Common 17-170] Unknown option '-waveform{5', please type 'create_clock -help' for usage info. [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc:40]
+Finished Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Completed Processing XDC Constraints
+
+create_clock -help
+create_clock
+
+Description: 
+Create a clock object
+
+Syntax: 
+create_clock  -period <arg> [-name <arg>] [-waveform <args>] [-add] [-quiet]
+              [-verbose] [<objects>]
+
+Returns: 
+new clock object
+
+Usage: 
+  Name         Description
+  ------------------------
+  -period      Clock period: Value > 0
+  [-name]      Clock name
+  [-waveform]  Clock edge specification
+  [-add]       Add to the existing clock in source_objects
+  [-quiet]     Ignore command errors
+  [-verbose]   Suspend message limits during command execution
+  [<objects>]  List of clock source ports, pins or nets
+
+Categories: 
+SDC, XDC
+
+Description:
+
+  Note: The XDC > Timing Constraints language templates and the Timing
+  Constraints Wizard in the Vivado IDE offer timing diagrams and additional
+  details around defining specific timing constraints. You can refer to these
+  sources for additional information.
+
+  Create a clock object with the specified period or waveform defined in
+  nanoseconds (ns). This command defines primary clocks which are used by the
+  timing engine as the delay propagation starting point of any clock edge.
+  The defined clock can be added to the definition of an existing clock, or
+  overwrite the existing clock.
+
+  A virtual clock can be created that has no source in the design. A virtual
+  clock can be used as a time reference for setting input and output delays
+  but does not physically exist in the design.
+
+  A clock can also be generated from an existing physical clock, and derive
+  many of its properties from the master clock. Use the
+  create_generated_clock command to derive a clock from an existing physical
+  clock.
+
+  Note: If you use create_clock to create a generated clock, instead of
+  create_generated_clock, the created clock does not inherit any of the
+  properties of its source clock. The insertion delay and jitter of the
+  parent clock will not be propagated to the generated clock, causing
+  incorrect timing calculations.
+
+  The create_clock command returns the name of the clock object that is
+  created.
+
+Arguments:
+
+  -period <arg> - (Required) Specifies the clock period of the clock object
+  to be created. The value is specified as nanoseconds (ns) and must be
+  greater than zero (>0).
+
+  -name <arg> - (Optional) The name of the clock object to be created. If the
+  name is omitted, a system-generated name will be used based on the
+  specified source <objects>. You can also use the -name option without
+  source <objects> to create a virtual clock for the design that is not
+  associated with a physical source on the design.
+
+  -waveform <arg1 arg2 ...> - (Optional) The rising and falling edge times of
+  the waveform of the defined clock, in nanoseconds, over one full clock
+  cycle. You can use multiple rising and falling edges to define the
+  characteristics of the waverform, but there must be an even number of
+  edges, representing both the rising and falling edges of the waveform. The
+  first time specified (arg1) represents the time of the first rising
+  transition, and the second time specified (arg2) is the falling edge. If
+  the value for the falling edge is smaller than the value for the rising
+  edge, it means that the falling edge occurs before the rising edge.
+
+  Note: If you do not specify the waveform, the default waveform is assumed
+  to have a rising edge at time 0.0 and a falling edge at one half the
+  specified period (-period/2).
+
+  -add - (Optional) Define multiple clocks on the same source for
+  simultaneous analysis with different clock waveforms. Use -name to specify
+  the new clock to add. If you do not specify this option, the create_clock
+  command will overwrite any existing clock of the same name.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <objects> - (Optional) The ports, pins, or nets which are the source of the
+  specified clock. If you specify a clock on a source object that already has
+  a clock, the new clock will overwrite the original clock unless you also
+  specify the -add option. If no <objects> are specified to attach the clock
+  object to, the clock will be created as a virtual clock in the design.
+
+  Note: The first driver pin of a specified net will be used as the source of
+  the clock.
+
+Examples:
+
+  The following example creates a physical clock called bftClk and defines
+  the clock period:
+
+    create_clock -name bftClk -period 5.000 [get_ports bftClk] 
+    
+
+  Note: If the get_ports command defining the objects is left off of this
+  example, a virtual clock is created in the design rather than a physical
+  clock.
+
+  The following example creates a clock named clk on the input port, bftClk,
+  with a period of 10ns, the rising edge at 2.4ns and the falling edge at
+  7.4ns:
+
+    create_clock -name clk -period 10.000 -waveform {2.4 7.4} [get_ports bftClk] 
+    
+
+  The following example creates a virtual clock since no clock source is
+  specified:
+
+    create_clock -name virtual_clock -period 5.000 
+    
+
+  The following example creates a clock with the falling edge at 2ns and the
+  rising edge at 7ns:
+
+    create_clock -name clk -period 10.000 -waveform {7 2} [get_ports bftClk] 
+    
+
+  Note: Because the falling edge is earlier than the rising edge in the
+  -waveform definition, although it is specified as arg2, it occurs first in
+  the waveform.
+
+See Also:
+
+   *  all_clocks
+   *  create_generated_clock
+   *  get_clocks
+   *  report_clocks
+   *  report_clock_interaction
+   *  report_clock_networks
+   *  report_clock_utilization
+   *  set_clock_groups
+   *  set_clock_latency
+   *  set_clock_uncertainty
+   *  set_input_delay
+   *  set_output_delay
+   *  set_propagated_clock
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Completed Processing XDC Constraints
+
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Completed Processing XDC Constraints
+
+launch_runs impl_1 -jobs 12
+[Sat Sep 23 12:52:28 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/synth_1/runme.log
+[Sat Sep 23 12:52:28 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/runme.log
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2268.629 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'synthTop' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ifa' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ifa' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rxD' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'ifa' with no modport [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:35]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:62]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'rxD' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'synthTop' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+WARNING: [Synth 8-87] always_comb on 'mCount_next_reg' did not result in combinational logic [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:65]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 2280.078 ; gain = 11.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 2303.977 ; gain = 35.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 2303.977 ; gain = 35.348
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2320.676 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 2320.676 ; gain = 52.047
+reset_run synth_1
+INFO: [Project 1-1160] Copying file C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/synth_1/synthTop.dcp to C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sat Sep 23 13:06:33 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/synth_1/runme.log
+[Sat Sep 23 13:06:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-23:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B06965A
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 4297.648 ; gain = 1976.973
+set_property PROGRAM.FILE {C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/synthTop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/synthTop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 4438.805 ; gain = 116.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'synthTop' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ifa' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ifa' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rxD' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'ifa' with no modport [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:35]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:62]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'rxD' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'synthTop' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+WARNING: [Synth 8-87] always_comb on 'mCount_next_reg' did not result in combinational logic [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:65]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 4497.438 ; gain = 175.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 4516.238 ; gain = 193.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 4516.238 ; gain = 193.801
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 4530.719 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 4530.719 ; gain = 208.281
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/utils_1/imports/synth_1/synthTop.dcp with file C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/synth_1/synthTop.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sat Sep 23 13:14:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/synth_1/runme.log
+[Sat Sep 23 13:14:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/runme.log
+refresh_design
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'CPB' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:5]
+WARNING: [Synth 8-11067] parameter 'CPB_HALF' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:6]
+WARNING: [Synth 8-11067] parameter 'CPB_EIGHT' declared inside package 'typedefs' shall be treated as localparam [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/typedefs.sv:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 4530.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'synthTop' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ifa' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ifa' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/ifa.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rxD' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+WARNING: [Synth 8-330] inout connections inferred for interface port 'ifa' with no modport [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:35]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:62]
+INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'rxD' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SegDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'SegDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/mux8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'anodeDecoder' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'anodeDecoder' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/anodeDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ctr_2bit' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctr_2bit' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ctr_2bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDiv' [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDiv' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/ClockDiv.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/SevenSegment.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'synthTop' (0#1) [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/synthTop.sv:23]
+WARNING: [Synth 8-87] always_comb on 'mCount_next_reg' did not result in combinational logic [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/imports/new/rxD.sv:65]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 4530.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 4530.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 4530.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 4540.422 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/constrs_1/new/constr.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 4540.422 ; gain = 9.703
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-23:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B06965A
+set_property PROGRAM.FILE {C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/synthTop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/synthTop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+close_design
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/utils_1/imports/synth_1/synthTop.dcp with file C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/synth_1/synthTop.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sat Sep 23 13:19:57 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/synth_1/runme.log
+[Sat Sep 23 13:19:57 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-23:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B06965A
+set_property PROGRAM.FILE {C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/synthTop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/synthTop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B06965A
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-23:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-23:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B06965A
+set_property PROGRAM.FILE {C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/synthTop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/Chris Nutsukpui/rx_2/rx_2.runs/impl_1/synthTop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+close [ open {C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/TxD.sv} w ]
+add_files {{C:/Users/Chris Nutsukpui/rx_2/rx_2.srcs/sources_1/new/TxD.sv}}
