@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../i2C.srcs/sources_1/new/clk_gen.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
