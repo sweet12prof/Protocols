@@ -116,3 +116,354 @@ run 20 ns
 run 20 ns
 relaunch_sim
 close_sim
+launch_simulation
+launch_simulation
+source clk_gen.tcl
+add_force {/clk_gen/i_clk} -radix hex {0 0ns} {1 15000ps} -repeat_every 30000ps
+add_force {/clk_gen/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/clk_gen/i_rst} -radix hex {1 0ns} -cancel_after 22
+add_force {/clk_gen/i_en} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+add_force {/clk_gen/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/clk_gen/i_rst} -radix hex {1 0ns} -cancel_after 22
+add_force {/clk_gen/i_en} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+add_force {/clk_gen/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/clk_gen/i_rst} -radix hex {1 0ns} -cancel_after 22
+add_force {/clk_gen/i_en} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+add_force {/clk_gen/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/clk_gen/i_rst} -radix hex {1 0ns} -cancel_after 22
+add_force {/clk_gen/i_en} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+set_property is_enabled true [get_files  /home/cdsmgr/Desktop/Projects/Hardware/i2C/i2C.srcs/sources_1/new/i2C.sv]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top i2C [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top i2C [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+set_property is_enabled false [get_files  /home/cdsmgr/Desktop/Projects/Hardware/i2C/i2C.srcs/sources_1/new/clk_gen.sv]
+launch_simulation
+launch_simulation
+launch_simulation
+source i2C.tcl
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/i2C/i_rst} -radix hex {1 0ns} -cancel_after 22
+add_force {/i2C/i_trEn} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/i2C/i_rst} -radix hex {1 0ns} -cancel_after 22
+add_force {/i2C/i_trEn} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/i2C/i_rst} -radix hex {1 0ns} -cancel_after 22
+add_force {/i2C/i_trEn} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+current_wave_config {Untitled 3}
+add_wave {{/i2C/i_rst_}} 
+relaunch_sim
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/i2C/i_rst_} -radix hex {1 0ns} -cancel_after 22
+add_force {/i2C/i_trEn} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/i2C/i_rst__}} 
+add_force {/i2C/i_rst_} -radix hex {1 0ns} -cancel_after 22
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/i2C/i_trEn} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+current_wave_config {Untitled 3}
+add_wave {{/i2C/i_rst__}} 
+relaunch_sim
+relaunch_sim
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/i2C/i_rst} -radix hex {1 0ns} -cancel_after 22
+add_force {/i2C/i_trEn} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/i2C/i_trEn_}} 
+add_force {/i2C/i_trEn_} -radix hex {1 0ns}
+add_force {/i2C/i_rst_} -radix hex {1 0ns} -cancel_after 22
+add_force {/i2C/i_clk} -radix hex {1 0ns} -cancel_after 22
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 11000ps} -repeat_every 22000ps
+add_force {/i2C/i_rst_} -radix hex {1 0ns} -cancel_after 22
+add_force {/i2C/i_trEn_} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/i2C/i_rst} -radix hex {1 0ns} -cancel_after 22
+relaunch_sim
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/i2C/i_rst_} -radix hex {1 0ns} -cancel_after 22
+add_force {/i2C/i_trEn_} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/i2C/i_clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/i2C/i_rst_} -radix hex {1 0ns} -cancel_after 22
+add_force {/i2C/i_trEn_} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run all
