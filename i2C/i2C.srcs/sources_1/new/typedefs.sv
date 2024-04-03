@@ -33,21 +33,27 @@ package typedefs;
 
     
     typedef struct packed {
-        logic [1:0]                 transferType, 
-        mode                        transferMode, 
-        logic [6:0]                 w_transferBytes, 
-        logic [6:0]                 r_transferBytes, 
-        logic [6:0]                 targetAddress,
-        logic [127:0][7:0]          wData
+        logic [1:0]                 transferType;
+        mode                        transferMode; 
+        logic [6:0]                 w_transferBytes; 
+        logic [6:0]                 r_transferBytes; 
+        logic [6:0]                 targetAddress;
+        logic [127:0][7:0]          wData;
     } i2c_cmd_fmt;
 
-     typedef enum logic [2:0] { 
-        I2C_IDLE, 
-        I2C_START_COND,
-       // I2C_MASTER_ACK,
-       // I2C_SLAVE_ACK, 
-        I2C_READ_TRANSFER,
-        I2C_WRITE_TRANSFER,
-        I2C_STOP_COND
-     } states;
+     typedef enum logic [1:0] { 
+        CMD_START_COND,
+        CMD_READ_TRANSFER,
+        CMD_WRITE_TRANSFER,
+        CMD_STOP_COND
+     } cmd;
+
+          typedef enum logic [2:0] { 
+                        I2C_IDLE, 
+                        I2C_MASTER_ACK,
+                        I2C_SLAVE_ACK, 
+                        I2C_READ_TRANSFER,
+                        I2C_WRITE_TRANSFER,
+                        I2C_STOP_COND
+          } states;
 endpackage
