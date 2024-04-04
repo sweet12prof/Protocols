@@ -22,14 +22,15 @@
 
 module i2C import typedefs::*;
 #(
-    parameter CLOCK_PER_HALF_BIT = 10
+    parameter CLOCK_PER_HALF_BIT = 2
 )
 (
     output logic        o_SCL,
+    output logic        enNextCmd,
+    output states       currCmd,
     inout  logic        o_SDA, 
-    input  logic        i2c_CMD,
+    input  cmd          i2c_CMD,
     input  logic [7:0]  i_MasterByte,
-    
     input  logic        i_clk, 
                         i_rst
 );
@@ -39,16 +40,19 @@ module i2C import typedefs::*;
 
     logic scl_ps, scl_ns;
     logic sda_ps, sda_ns;
+    logic nCmdps, nCmdns; 
 
 
     logic [2:0] bitCountCurr, bitCountNext;
-    logic [$clog2(CLOCK_PER_HALF_BIT)-1 : 0] cntCurr, cntNext;
+    logic [$clog2(CLOCK_PER_HALF_BIT*2)-1 : 0] cntCurr, cntNext;
 
     logic [7:0] readByteNS, readBytePS;
     logic readBit;
     logic ACK_BIT_NS, ACK_BIT_PS;
 
-    assign readBit = o_SDA;
+    assign readBit    = o_SDA;
+    assign currCmd    = ps;
+    assign enNextCmd  = nCmdps;
 
     always_ff @(posedge i_clk, posedge i_rst) begin 
         if(i_rst)  begin 
@@ -59,6 +63,7 @@ module i2C import typedefs::*;
             bitCountCurr    <= 3'd7;
             readBytePS      <= '0;
             ACK_BIT_PS      <= '0;
+            nCmdps          <= '0;
         end
         else  begin 
             ps              <= ns;   
@@ -68,6 +73,7 @@ module i2C import typedefs::*;
             bitCountCurr    <= bitCountNext;
             readBytePS      <= readByteNS;
             ACK_BIT_PS      <= ACK_BIT_NS;
+            nCmdps          <= nCmdns;
         end 
     end 
 
@@ -76,14 +82,15 @@ module i2C import typedefs::*;
             I2C_IDLE : begin 
                 ACK_BIT_NS      = '0;
                 readByteNS      = '0;
+                //nCmdns          = '0;
                 if(i2c_CMD == CMD_START_COND) begin 
-                      if(cntCurr == (CLOCK_PER_HALF_BIT/2) - 1) begin 
+                      if(cntCurr == (CLOCK_PER_HALF_BIT) - 1) begin 
                         sda_ns  = '0;
                         scl_ns  = '1;
                       end 
-                      else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin 
+                      else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 2) begin 
                         sda_ns = '0;
-                        scl_ns = ~scl_ps;
+                        scl_ns = '0;
                       end 
                       else begin 
                         sda_ns = sda_ps;
@@ -98,14 +105,21 @@ module i2C import typedefs::*;
             I2C_WRITE_TRANSFER: begin 
                 readByteNS      = '0;
                 ACK_BIT_NS      = '0;
-                if(bitCountCurr == 3'd7) begin 
+              //  nCmdns          = '0;
+                if(bitCountCurr == 3'd0) begin 
                     if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin
                         sda_ns  = 'Z;
                         scl_ns  = ~scl_ps; 
                     end 
                     else if(cntCurr == CLOCK_PER_HALF_BIT - 1 ) begin
-                        sda_ns = i_MasterByte[bitCountCurr];
+                        //sda_ns = i_MasterByte[bitCountCurr];
+                        sda_ns = sda_ps;
                         scl_ns = ~scl_ps;
+                    end
+                    else if(cntCurr == '0) begin
+                        sda_ns = i_MasterByte[bitCountCurr];
+                        //sda_ns = sda_ps;
+                        scl_ns = scl_ps;
                     end
                     else begin 
                         sda_ns = sda_ps;
@@ -130,11 +144,13 @@ module i2C import typedefs::*;
 
             I2C_READ_TRANSFER: begin 
                 ACK_BIT_NS      = '0;
-                if(bitCountCurr == 3'd7) begin 
+               // nCmdns          = '0;
+                if(bitCountCurr == 3'd0) begin 
                     if(cntCurr == (CLOCK_PER_HALF_BIT/2) - 1) begin 
                         readByteNS[7:0] = {readBytePS[6:0],  o_SDA};
                         sda_ns  = 'Z;
                         scl_ns  = scl_ps;
+                       // nCmdns  = '1;
                     end 
                     else if(cntCurr == CLOCK_PER_HALF_BIT - 1 ) begin
                             readByteNS      = readBytePS;
@@ -180,6 +196,7 @@ module i2C import typedefs::*;
 
             I2C_SLAVE_ACK : begin 
                  readByteNS      = readBytePS;
+
                  if(cntCurr == (CLOCK_PER_HALF_BIT/2) - 1) begin 
                         ACK_BIT_NS = o_SDA;
                         sda_ns     = 'Z;
@@ -190,11 +207,20 @@ module i2C import typedefs::*;
                             sda_ns          = 'Z; 
                             scl_ns          = ~scl_ps;
                     end
-                    else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin
+                    else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 2) begin
                             ACK_BIT_NS = ACK_BIT_PS;
                             sda_ns  = 'Z;
-                            scl_ns  = ~scl_ps; 
+                            scl_ns  = scl_ps; 
                     end
+
+                    else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin
+                            ACK_BIT_NS = ACK_BIT_PS;
+                            scl_ns  = ~scl_ps; 
+                            if(i2c_CMD == CMD_WRITE_TRANSFER)
+                                sda_ns = i_MasterByte[bitCountCurr];        // we are going to start writing next byte
+                            else 
+                                sda_ns = '1;                               //this should be 2 conditions, when we are doing a combined format(ie; reverse operation)
+                    end                                                    // and if we are going to send stop byte next
                      else begin 
                          ACK_BIT_NS = ACK_BIT_PS;
                         sda_ns = sda_ps;
@@ -236,11 +262,12 @@ module i2C import typedefs::*;
     always_comb begin : ns_logic_for_STATES 
         case(ps)
             I2C_IDLE : begin
-                bitCountNext = '0;
+                bitCountNext = 3'd7;
+                nCmdns       = '0;
                 if(i2c_CMD == CMD_START_COND) begin 
                     if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin 
                         ns          = I2C_WRITE_TRANSFER;
-                        cntNext     = '0;
+                        cntNext     = CLOCK_PER_HALF_BIT;
                     end 
                     else begin 
                         ns          = I2C_IDLE;
@@ -250,12 +277,19 @@ module i2C import typedefs::*;
             end  
 
             I2C_WRITE_TRANSFER : begin 
-                if(bitCountNext == '0 )  begin 
+                nCmdns =  '0;
+                if(bitCountCurr == '0 )  begin 
                     if (cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin
                         ns              = I2C_SLAVE_ACK;
                         cntNext         = '0;
-                        bitCountNext    = '0;   
+                        bitCountNext    = 3'd7;   
                     end
+                    else if(cntCurr == (CLOCK_PER_HALF_BIT) - 1 ) begin 
+                        ns              = I2C_WRITE_TRANSFER;
+                        cntNext         = cntCurr + 1;
+                        nCmdns          = '1;
+                        bitCountNext    = bitCountCurr;
+                    end 
                     else begin 
                           ns              = I2C_WRITE_TRANSFER;
                           cntNext         = cntCurr + 1;
@@ -266,8 +300,9 @@ module i2C import typedefs::*;
                     if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin 
                         ns           = I2C_WRITE_TRANSFER;
                         cntNext      = '0;
-                        bitCountNext = bitCountCurr + 1;  
+                        bitCountNext = bitCountCurr - 1;  
                     end  
+ 
                     else begin 
                         ns           = I2C_WRITE_TRANSFER;
                         cntNext      = cntCurr + 1;
@@ -277,11 +312,12 @@ module i2C import typedefs::*;
             end 
 
             I2C_SLAVE_ACK : begin 
-                bitCountNext = '0;
+                bitCountNext = 3'd7;
+                nCmdns       = '0;
                 if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1 ) begin 
                     if(i2c_CMD == CMD_WRITE_TRANSFER) begin 
                         ns              = I2C_WRITE_TRANSFER;
-                        cntNext         = '0;
+                        cntNext         = cntCurr + 1;                         
                     end
                     else if (i2c_CMD == CMD_STOP_COND) begin
                         ns              = I2C_STOP_COND;
@@ -289,12 +325,19 @@ module i2C import typedefs::*;
                     end 
                     else if (i2c_CMD == CMD_READ_TRANSFER) begin
                         ns              = I2C_READ_TRANSFER;
-                        cntNext         = '0;
-                    end
+                        cntNext         = '0;                           // this is basically when we do a reverse operation, however expect a 1 cycle overhead from earlier process
+                    end                                                 // so cnt next should be incremented here, when the code is updated later
                     else begin 
                         ns              = I2C_STOP_COND;
+                        cntNext         = '0;
                     end
-                end else begin 
+                end 
+                else if(cntCurr == (CLOCK_PER_HALF_BIT) - 1 ) begin 
+                        ns              = I2C_SLAVE_ACK;
+                        cntNext         = cntCurr + 1;
+                       // nCmdns          = 1'b0;
+                end 
+                else begin 
                     ns                  = I2C_SLAVE_ACK;
                     cntNext             = cntCurr + 1;
                 end 
@@ -302,12 +345,20 @@ module i2C import typedefs::*;
 
 
             I2C_READ_TRANSFER: begin 
-                 if(bitCountNext == '0 )  begin 
+                nCmdns = '0;
+                 if(bitCountCurr == '0 )  begin 
                     if (cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin
                         ns              = I2C_MASTER_ACK;
                         cntNext         = '0;
-                        bitCountNext    = '0;   
+                        bitCountNext    = 3'd7;   
+                        nCmdns          = '0;
                     end
+                    else if(cntCurr == (CLOCK_PER_HALF_BIT) - 1 ) begin 
+                        ns              = I2C_READ_TRANSFER;
+                        cntNext         = cntCurr + 1;
+                        bitCountNext    = bitCountCurr;
+                        nCmdns          = '1;
+                    end 
                     else begin 
                           ns              = I2C_READ_TRANSFER;
                           cntNext         = cntCurr + 1;
@@ -318,8 +369,9 @@ module i2C import typedefs::*;
                     if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin 
                         ns           = I2C_READ_TRANSFER;
                         cntNext      = '0;
-                        bitCountNext = bitCountCurr + 1;  
+                        bitCountNext = bitCountCurr - 1;  
                     end  
+           
                     else begin 
                         ns           = I2C_READ_TRANSFER;
                         cntNext      = cntCurr + 1;
@@ -330,7 +382,8 @@ module i2C import typedefs::*;
 
 
             I2C_MASTER_ACK : begin 
-                bitCountNext = '0;
+                nCmdns       = '0;
+                bitCountNext = 3'd7;
                 if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1 ) begin 
                     if(i2c_CMD == CMD_READ_TRANSFER) begin 
                         ns              = I2C_READ_TRANSFER;
@@ -346,8 +399,17 @@ module i2C import typedefs::*;
                     end
                     else begin 
                         ns              = I2C_STOP_COND;
+                        cntNext         = '0;
                     end
-                end else begin 
+                end 
+                
+                else if(cntCurr == (CLOCK_PER_HALF_BIT) - 1 ) begin 
+                        ns              = I2C_MASTER_ACK;
+                        cntNext         = cntCurr + 1;
+                       // nCmdns          = 1'b1;
+                end 
+
+                else begin 
                     ns                  = I2C_MASTER_ACK;
                     cntNext             = cntCurr + 1;
                 end 
@@ -355,8 +417,10 @@ module i2C import typedefs::*;
 
 
             I2C_STOP_COND : begin
+                nCmdns       = '0;
                 bitCountNext = '0;
                   if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1 ) begin 
+                     nCmdns         = '1;
                      ns             = I2C_IDLE;
                      cntNext        = '0;
                   end else begin 
@@ -366,39 +430,6 @@ module i2C import typedefs::*;
             end 
         endcase
     end 
-
-    // always_comb begin 
-    //     case (ps)  
-    //         I2C_IDLE : begin
-    //             o_SDA = scl_ps;
-    //         end 
-
-    //         I2C_WRITE_TRANSFER : begin 
-    //              o_SDA = scl_ps;
-    //         end 
-
-    //         I2C_SLAVE_ACK : begin
-    //             o_SDA = 'Z;
-    //         end 
-
-    //         I2C_READ_TRANSFER : begin 
-    //             o_SDA = 'Z;
-    //         end 
-
-    //         I2C_MASTER_ACK : begin
-    //             o_SDA = scl_ps;
-    //         end 
-
-    //         I2C_STOP_COND : begin 
-    //             o_SDA = scl_ps;
-    //         end 
-
-    //         default : begin
-    //             o_SDA = 'Z;
-    //         end
-    //     endcase 
-    // end 
-
     assign o_SDA = (ps == I2C_IDLE)             ? sda_ps : 
                    (ps == I2C_WRITE_TRANSFER)   ? sda_ps : 
                    (ps == I2C_SLAVE_ACK)        ? 'Z : 

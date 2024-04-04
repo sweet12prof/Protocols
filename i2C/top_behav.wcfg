@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top" />
+            <top_module name="typedefs" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.000 ns"></ZoomEndTime>
+      <Cursor1Time time="98.039 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="38" />
+   <wvobject type="logic" fp_name="/top/i_clk">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/i_rst">
+      <obj_property name="ElementShortName">i_rst</obj_property>
+      <obj_property name="ObjectShortName">i_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider41" type="divider">
+      <obj_property name="label">testbench</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/ifa1/exttoi2c/o_SDA">
+      <obj_property name="ElementShortName">o_SDA</obj_property>
+      <obj_property name="ObjectShortName">o_SDA</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/ifa1/exttoi2c/i2c_CMD">
+      <obj_property name="ElementShortName">i2c_CMD[1:0]</obj_property>
+      <obj_property name="ObjectShortName">i2c_CMD[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/ifa1/exttoi2c/i_MasterByte">
+      <obj_property name="ElementShortName">i_MasterByte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_MasterByte[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/ifa1/exttoi2c/enNextCmd">
+      <obj_property name="ElementShortName">enNextCmd</obj_property>
+      <obj_property name="ObjectShortName">enNextCmd</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/ifa1/exttoi2c/currCmd">
+      <obj_property name="ElementShortName">currCmd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">currCmd[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/ifa1/exttoi2c/o_SCL">
+      <obj_property name="ElementShortName">o_SCL</obj_property>
+      <obj_property name="ObjectShortName">o_SCL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/ifa1/exttoi2c/i_clk">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/ifa1/exttoi2c/i_rst">
+      <obj_property name="ElementShortName">i_rst</obj_property>
+      <obj_property name="ObjectShortName">i_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider42" type="divider">
+      <obj_property name="label">i2c</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/o_SCL">
+      <obj_property name="ElementShortName">o_SCL</obj_property>
+      <obj_property name="ObjectShortName">o_SCL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/enNextCmd">
+      <obj_property name="ElementShortName">enNextCmd</obj_property>
+      <obj_property name="ObjectShortName">enNextCmd</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/currCmd">
+      <obj_property name="ElementShortName">currCmd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">currCmd[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/o_SDA">
+      <obj_property name="ElementShortName">o_SDA</obj_property>
+      <obj_property name="ObjectShortName">o_SDA</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/i2c_CMD">
+      <obj_property name="ElementShortName">i2c_CMD[1:0]</obj_property>
+      <obj_property name="ObjectShortName">i2c_CMD[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/i_MasterByte">
+      <obj_property name="ElementShortName">i_MasterByte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_MasterByte[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/i_clk">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/i_rst">
+      <obj_property name="ElementShortName">i_rst</obj_property>
+      <obj_property name="ObjectShortName">i_rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/ps">
+      <obj_property name="ElementShortName">ps[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ps[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/ns">
+      <obj_property name="ElementShortName">ns[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ns[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/scl_ps">
+      <obj_property name="ElementShortName">scl_ps</obj_property>
+      <obj_property name="ObjectShortName">scl_ps</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/scl_ns">
+      <obj_property name="ElementShortName">scl_ns</obj_property>
+      <obj_property name="ObjectShortName">scl_ns</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/sda_ps">
+      <obj_property name="ElementShortName">sda_ps</obj_property>
+      <obj_property name="ObjectShortName">sda_ps</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/sda_ns">
+      <obj_property name="ElementShortName">sda_ns</obj_property>
+      <obj_property name="ObjectShortName">sda_ns</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/nCmdps">
+      <obj_property name="ElementShortName">nCmdps</obj_property>
+      <obj_property name="ObjectShortName">nCmdps</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/nCmdns">
+      <obj_property name="ElementShortName">nCmdns</obj_property>
+      <obj_property name="ObjectShortName">nCmdns</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/bitCountCurr">
+      <obj_property name="ElementShortName">bitCountCurr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bitCountCurr[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/bitCountNext">
+      <obj_property name="ElementShortName">bitCountNext[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bitCountNext[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/cntCurr">
+      <obj_property name="ElementShortName">cntCurr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cntCurr[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/cntNext">
+      <obj_property name="ElementShortName">cntNext[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cntNext[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/readByteNS">
+      <obj_property name="ElementShortName">readByteNS[7:0]</obj_property>
+      <obj_property name="ObjectShortName">readByteNS[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/readBytePS">
+      <obj_property name="ElementShortName">readBytePS[7:0]</obj_property>
+      <obj_property name="ObjectShortName">readBytePS[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/readBit">
+      <obj_property name="ElementShortName">readBit</obj_property>
+      <obj_property name="ObjectShortName">readBit</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/ACK_BIT_NS">
+      <obj_property name="ElementShortName">ACK_BIT_NS</obj_property>
+      <obj_property name="ObjectShortName">ACK_BIT_NS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/ACK_BIT_PS">
+      <obj_property name="ElementShortName">ACK_BIT_PS</obj_property>
+      <obj_property name="ObjectShortName">ACK_BIT_PS</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/DUT/CLOCK_PER_HALF_BIT">
+      <obj_property name="ElementShortName">CLOCK_PER_HALF_BIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLOCK_PER_HALF_BIT[31:0]</obj_property>
+   </wvobject>
+</wave_config>
