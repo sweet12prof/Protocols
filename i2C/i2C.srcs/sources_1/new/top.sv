@@ -36,7 +36,10 @@ module top import typedefs::*;;
         .i2c_CMD(ifa1.i2c_CMD),
         .i_MasterByte(ifa1.i_MasterByte), 
         .enNextCmd(ifa1.enNextCmd), 
-        .currCmd(ifa1.currCmd)
+        .currCmd(ifa1.currCmd), 
+        .simAckEdge(ifa1.simAckEdge), 
+        .simReadTxBit(ifa1.simReadTxBit)
+        //.o_sampleEdge(ifa1.o_sampleEdge)
     );
 
     initial begin

@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Apr  3 15:49:29 2024
+# Process ID: 4054
+# Current directory: /home/cdsmgr/Desktop/Projects/Hardware/Protocols/i2C
+# Command line: vivado
+# Log file: /home/cdsmgr/Desktop/Projects/Hardware/Protocols/i2C/vivado.log
+# Journal file: /home/cdsmgr/Desktop/Projects/Hardware/Protocols/i2C/vivado.jou
+# Running On: stew1, OS: Linux, CPU Frequency: 3536.914 MHz, CPU Physical cores: 4, Host memory: 8076 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/cdsmgr/Desktop/Projects/Hardware/Protocols/i2C/i2C.xpr
+launch_simulation
+source top.tcl
+current_wave_config {Untitled 1}
+add_wave {{/top/DUT}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+relaunch_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim
+launch_simulation
+source top.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/cdsmgr/Desktop/Projects/Hardware/Protocols/i2C/top_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/cdsmgr/Desktop/Projects/Hardware/Protocols/i2C/top_behav.wcfg
+set_property xsim.view /home/cdsmgr/Desktop/Projects/Hardware/Protocols/i2C/top_behav.wcfg [get_filesets sim_1]
+close_sim
+refresh_design
