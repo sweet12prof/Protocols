@@ -13,14 +13,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,000.000 ns"></ZoomEndTime>
-      <Cursor1Time time="98.039 ns"></Cursor1Time>
+      <ZoomEndTime time="1,214.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,460.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="38" />
+   <WVObjectSize size="46" />
    <wvobject type="logic" fp_name="/top/i_clk">
       <obj_property name="ElementShortName">i_clk</obj_property>
       <obj_property name="ObjectShortName">i_clk</obj_property>
@@ -134,12 +134,12 @@
       <obj_property name="ObjectShortName">nCmdns</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/top/DUT/bitCountCurr">
-      <obj_property name="ElementShortName">bitCountCurr[2:0]</obj_property>
-      <obj_property name="ObjectShortName">bitCountCurr[2:0]</obj_property>
+      <obj_property name="ElementShortName">bitCountCurr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bitCountCurr[3:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/top/DUT/bitCountNext">
-      <obj_property name="ElementShortName">bitCountNext[2:0]</obj_property>
-      <obj_property name="ObjectShortName">bitCountNext[2:0]</obj_property>
+      <obj_property name="ElementShortName">bitCountNext[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bitCountNext[3:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/top/DUT/cntCurr">
       <obj_property name="ElementShortName">cntCurr[1:0]</obj_property>
@@ -172,5 +172,37 @@
    <wvobject type="array" fp_name="/top/DUT/CLOCK_PER_HALF_BIT">
       <obj_property name="ElementShortName">CLOCK_PER_HALF_BIT[31:0]</obj_property>
       <obj_property name="ObjectShortName">CLOCK_PER_HALF_BIT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/simAckEdge">
+      <obj_property name="ElementShortName">simAckEdge</obj_property>
+      <obj_property name="ObjectShortName">simAckEdge</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/simReadTxBit">
+      <obj_property name="ElementShortName">simReadTxBit</obj_property>
+      <obj_property name="ObjectShortName">simReadTxBit</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/readBit">
+      <obj_property name="ElementShortName">readBit</obj_property>
+      <obj_property name="ObjectShortName">readBit</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/simSendRxBit">
+      <obj_property name="ElementShortName">simSendRxBit</obj_property>
+      <obj_property name="ObjectShortName">simSendRxBit</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top/DUT/ReadRxBit">
+      <obj_property name="ElementShortName">ReadRxBit</obj_property>
+      <obj_property name="ObjectShortName">ReadRxBit</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/test/rx_data">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/test/randGen">
+      <obj_property name="ElementShortName">randGen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">randGen[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top/test/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
    </wvobject>
 </wave_config>

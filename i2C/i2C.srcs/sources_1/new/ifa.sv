@@ -29,6 +29,8 @@ interface ifa import typedefs::*; (input i_clk, i_rst);
     logic [7:0]         i_MasterByte;
     logic               simAckEdge      ;         // for testbench only send ack on this edge from slave
     logic               simReadTxBit    ;
+    logic               simSendRxBit    ;
+    logic               ReadRxBit       ;
     //logic               o_sampleEdge    ;
 
     modport i2ctoExt (
@@ -41,7 +43,9 @@ interface ifa import typedefs::*; (input i_clk, i_rst);
                 currCmd, 
                 o_SCL, 
                 simAckEdge,
-                simReadTxBit
+                simReadTxBit, 
+                simSendRxBit, 
+                ReadRxBit
                // sampleEdge
     );
 
@@ -55,7 +59,9 @@ interface ifa import typedefs::*; (input i_clk, i_rst);
                 i_clk, 
                 i_rst, 
                 simAckEdge,
-                simReadTxBit 
+                simReadTxBit, 
+                simSendRxBit, 
+                ReadRxBit
                 //sampleEdge
     );
 endinterface //ifa

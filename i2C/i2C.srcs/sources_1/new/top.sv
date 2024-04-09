@@ -38,7 +38,9 @@ module top import typedefs::*;;
         .enNextCmd(ifa1.enNextCmd), 
         .currCmd(ifa1.currCmd), 
         .simAckEdge(ifa1.simAckEdge), 
-        .simReadTxBit(ifa1.simReadTxBit)
+        .simReadTxBit(ifa1.simReadTxBit), 
+        .ReadRxBit(ifa1.ReadRxBit), 
+        .simSendRxBit(ifa1.simSendRxBit)
         //.o_sampleEdge(ifa1.o_sampleEdge)
     );
 
