@@ -49,15 +49,16 @@ module testbench import typedefs::*;(
         end
 
         @(posedge ifa1.enNextCmd) begin
-            ifa1.i2c_CMD    = CMD_STOP_COND;
+            ifa1.i2c_CMD    = CMD_START_COND;
         end 
-
-        @(ifa1.currCmd == I2C_IDLE);
-            ifa1.i_MasterByte   = 8'heb;
-            ifa1.i2c_CMD = CMD_START_COND;
+            //ifa1.i_MasterByte   = 8'hFb;
+        // @(ifa1.currCmd == I2C_IDLE);
+        //     ifa1.i_MasterByte   = 8'heb;
+        //     ifa1.i2c_CMD = CMD_START_COND;
         @(posedge ifa1.enNextCmd) begin 
             ifa1.i2c_CMD = CMD_READ_TRANSFER;
         end 
+        ok = randomize(randGen);
         @(posedge ifa1.enNextCmd) begin 
             ifa1.i2c_CMD = CMD_READ_TRANSFER;        
         end 

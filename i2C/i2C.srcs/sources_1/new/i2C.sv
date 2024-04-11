@@ -178,7 +178,7 @@ always_comb begin : ns_logic_sda_scl
                     if(i2c_CMD == CMD_READ_TRANSFER) 
                         sda_ns  = '0;                                 //if we are to read multiple bytes, send ACK as next SDA
                     else 
-                        sda_ns  = '1;                                 // IF We art to stop readig send NACK     
+                        sda_ns  = '1;                                 // IF We are to stop readig send NACK NB: could be repeated start     
                 end  
                 else begin 
                     readByteNS      = readBytePS;
@@ -236,16 +236,23 @@ always_comb begin : ns_logic_sda_scl
                         simSendRxBitNS = '0;
                     //-----------------------------------------
 
-                    if(i2c_CMD == CMD_STOP_COND)
+                    if(i2c_CMD == CMD_STOP_COND) begin 
                         scl_ns = '1;
-                    else 
+                    end
+                    else if(i2c_CMD == CMD_START_COND) begin 
+                        scl_ns = '1;
+                    end 
+                    else  begin 
                         scl_ns  = ~scl_ps; 
+                    end
                     
                     if(i2c_CMD == CMD_WRITE_TRANSFER)                //commented code applies to ....-1 condition
                         sda_ns = i_MasterByte[bitCountCurr-1];        // we are going to start writing next byte
                     else if(i2c_CMD == CMD_STOP_COND)
                         sda_ns = 1'b1;
-                    else
+                    else if(i2c_CMD == CMD_START_COND)
+                        sda_ns = 1'b1; 
+                    else 
                         sda_ns = 'Z;                               //this should be 2 conditions, when we are doing a combined format(ie; reverse operation)
             end                                                    // and if we are going to send stop byte next
             else begin 
@@ -265,7 +272,13 @@ always_comb begin : ns_logic_sda_scl
                         scl_ns          = ~scl_ps;
                 end
                 else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin
-                        scl_ns  = ~scl_ps; 
+                        if(i2c_CMD == CMD_START_COND)
+                            scl_ns = 1'b1;
+                        else if(i2c_CMD == CMD_STOP_COND)
+                            scl_ns = 1'b1;
+                        else 
+                            scl_ns  = ~scl_ps; 
+
                         simAckEdgeNS    = '0;
 
                         //---------------------------------------------
@@ -275,8 +288,10 @@ always_comb begin : ns_logic_sda_scl
                              simSendRxBitNS   = '0;
                         //----------------------------------------------
 
-                        if(i2c_CMD == CMD_STOP_COND)
+                        if(i2c_CMD == CMD_STOP_COND)                    //if next command is stop
                             sda_ns = '1;
+                        else if (i2c_CMD == CMD_START_COND)                 //repeated start
+                            sda_ns = 1'b1; 
                         else 
                             sda_ns = '0;      
                 end
@@ -366,9 +381,14 @@ always_comb begin : ns_logic_for_STATES
                 end 
                 else if (i2c_CMD == CMD_READ_TRANSFER) begin
                     ns              = I2C_READ_TRANSFER;
-                    bitCountNext   = bitCountCurr - 1;
+                    bitCountNext    = bitCountCurr - 1;
                     cntNext         = '0;                           // this is basically when we do a reverse operation, however expect a 1 cycle overhead from earlier process
                 end                                                 // so cnt next should be incremented here, when the code is updated later
+                else if (i2c_CMD == CMD_START_COND) begin 
+                    ns              = I2C_IDLE; 
+                    bitCountNext    = bitCountCurr -1 ;
+                    cntNext         = '0; 
+                end 
                 else begin 
                     ns              = I2C_STOP_COND;
                     cntNext         = '0;
@@ -440,6 +460,11 @@ always_comb begin : ns_logic_for_STATES
                     ns              = I2C_WRITE_TRANSFER;
                     cntNext         = '0;
                 end
+                else if (i2c_CMD == CMD_START_COND) begin 
+                    ns              = I2C_IDLE; 
+                    bitCountNext    = bitCountCurr - 1;
+                    cntNext         = '0;
+                end 
                 else begin 
                     ns              = I2C_STOP_COND;
                     cntNext         = '0;
