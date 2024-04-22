@@ -40,7 +40,8 @@ module top import typedefs::*;;
         .simAckEdge(ifa1.simAckEdge), 
         .simReadTxBit(ifa1.simReadTxBit), 
         .ReadRxBit(ifa1.ReadRxBit), 
-        .simSendRxBit(ifa1.simSendRxBit)
+        .simSendRxBit(ifa1.simSendRxBit), 
+        .simRead(ifa1.simRead)
         //.o_sampleEdge(ifa1.o_sampleEdge)
     );
 

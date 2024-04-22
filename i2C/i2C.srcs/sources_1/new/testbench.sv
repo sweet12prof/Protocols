@@ -51,10 +51,6 @@ module testbench import typedefs::*;(
         @(posedge ifa1.enNextCmd) begin
             ifa1.i2c_CMD    = CMD_START_COND;
         end 
-            //ifa1.i_MasterByte   = 8'hFb;
-        // @(ifa1.currCmd == I2C_IDLE);
-        //     ifa1.i_MasterByte   = 8'heb;
-        //     ifa1.i2c_CMD = CMD_START_COND;
         @(posedge ifa1.enNextCmd) begin 
             ifa1.i2c_CMD = CMD_READ_TRANSFER;
         end 
@@ -97,16 +93,6 @@ module testbench import typedefs::*;(
                 $display("Simulation Suceeded");
     end 
 
-
-    // always begin 
-    //     @(posedge ifa1.i_clk);
-    //         if(ifa1.currCmd == I2C_MASTER_ACK)
-    //             if(rx_data != randGen)
-    //                 $display("Error in transmission");
-    //             else 
-    //                 $display("Simulation Suceeded");
-    // end 
-
     always_ff@(posedge ifa1.i_clk) begin 
         if(ifa1.simReadTxBit)
              tx_data = {tx_data[6:0] , ifa1.o_SDA};
@@ -124,5 +110,5 @@ module testbench import typedefs::*;(
 
     assign ifa1.o_SDA = (ifa1.simAckEdge) ? 1'b0 : 'Z;
 
-    assign ifa1.o_SDA = (ifa1.simSendRxBit) ? randGen[i] : 'Z;
+    assign ifa1.o_SDA = (ifa1.simRead) ? randGen[i] : 'Z;
 endmodule

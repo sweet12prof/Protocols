@@ -27,6 +27,7 @@ module i2C import typedefs::*;
 (
     output logic        simAckEdge,
     output logic        simReadTxBit,
+    output logic        simRead,
 
     output logic        simSendRxBit, 
     output logic        ReadRxBit,
@@ -161,29 +162,34 @@ always_comb begin : ns_logic_sda_scl
             simSendRxBitNS  = '1;
             if(bitCountCurr == 4'd0) begin 
                 if(cntCurr == (CLOCK_PER_HALF_BIT/2) - 1) begin 
-                    readByteNS[7:0] = {readBytePS[6:0],  o_SDA};
-                    sda_ns  = 'Z;
-                    scl_ns  = scl_ps;
-                    simAckEdgeNS    = '0;
+                    readByteNS[7:0]     = {readBytePS[6:0],  o_SDA};
+                    sda_ns              = 'Z;
+                    scl_ns              = scl_ps;
+                    simAckEdgeNS        = '0;
                 end 
                 else if(cntCurr == CLOCK_PER_HALF_BIT - 1 ) begin
                         readByteNS      = readBytePS;
                         sda_ns          = 'Z; 
                         scl_ns          = ~scl_ps;
                 end
+                else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 2) begin
+                        readByteNS      = readBytePS;
+                        scl_ns          = scl_ps;
+                        simSendRxBitNS  = '0; 
+                        sda_ns          = 'Z;                                 
+                end  
                 else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin
                         readByteNS      = readBytePS;
                         scl_ns          = ~scl_ps;
-                        simSendRxBitNS  = '0;
                     if(i2c_CMD == CMD_READ_TRANSFER) 
-                        sda_ns  = '0;                                 //if we are to read multiple bytes, send ACK as next SDA
+                        sda_ns          = '0;                                 //if we are to read multiple bytes, send ACK as next SDA
                     else 
-                        sda_ns  = '1;                                 // IF We are to stop readig send NACK NB: could be repeated start     
+                        sda_ns          = '1;                                 // IF We are to stop readig send NACK NB: could be repeated start     
                 end  
                 else begin 
                     readByteNS      = readBytePS;
-                    sda_ns = sda_ps;
-                    scl_ns = scl_ps;
+                    sda_ns              = sda_ps;
+                    scl_ns              = scl_ps;
                 end 
             end 
             else begin  
@@ -197,11 +203,16 @@ always_comb begin : ns_logic_sda_scl
                         sda_ns          = 'Z; 
                         scl_ns          = ~scl_ps;
                 end
+                else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 2) begin
+                        readByteNS      = readBytePS;
+                        sda_ns          = 'Z;
+                        scl_ns          =  scl_ps; 
+                        simSendRxBitNS  = 'b0;
+                end
                 else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin
                         readByteNS      = readBytePS;
                         sda_ns          = 'Z;
                         scl_ns          = ~scl_ps; 
-                        simSendRxBitNS  = 'b0;
                 end
                     else begin 
                     sda_ns = sda_ps;
@@ -272,30 +283,26 @@ always_comb begin : ns_logic_sda_scl
                         scl_ns          = ~scl_ps;
                 end
                 else if(cntCurr == (CLOCK_PER_HALF_BIT*2) - 1) begin
-                        if(i2c_CMD == CMD_START_COND)
-                            scl_ns = 1'b1;
-                        else if(i2c_CMD == CMD_STOP_COND)
-                            scl_ns = 1'b1;
-                        else 
+                        if(i2c_CMD == CMD_START_COND) begin 
+                            scl_ns = 1'b1;    
+                            sda_ns = 1'b1;               //repeated start
+                        end 
+                        else if(i2c_CMD == CMD_STOP_COND) begin 
+                            scl_ns = 1'b1; 
+                            sda_ns = '1;                  //if next command is stop
+                        end 
+                        else if(i2c_CMD == CMD_READ_TRANSFER) begin 
+                            scl_ns           = ~scl_ps;
+                            sda_ns           = 'Z;
+                            simSendRxBitNS   = '1;
+                        end 
+                        else  begin 
                             scl_ns  = ~scl_ps; 
-
+                            sda_ns = '0;
+                        end 
                         simAckEdgeNS    = '0;
-
-                        //---------------------------------------------
-                        if(i2c_CMD == CMD_READ_TRANSFER) 
-                             simSendRxBitNS   = '1;
-                        else 
-                             simSendRxBitNS   = '0;
-                        //----------------------------------------------
-
-                        if(i2c_CMD == CMD_STOP_COND)                    //if next command is stop
-                            sda_ns = '1;
-                        else if (i2c_CMD == CMD_START_COND)                 //repeated start
-                            sda_ns = 1'b1; 
-                        else 
-                            sda_ns = '0;      
                 end
-                    else begin 
+                else begin 
                     sda_ns = sda_ps;
                     scl_ns = scl_ps;
                 end 
@@ -525,15 +532,20 @@ end
 
 always_ff @(posedge i_clk) begin 
     if(ps == I2C_READ_TRANSFER) begin 
-        // if (bitCountCurr == 4'd0 && cntCurr == (CLOCK_PER_HALF_BIT*2) - 2)
-        //     ReadRxBit <= '0;
-        // else 
-            ReadRxBit <= scl_ps & scl_ns;
+        ReadRxBit <= scl_ps & scl_ns;
     end 
 end 
 
 assign simSendRxBit = simSendRxBitPS;
 
 assign ackBit       = preAck & o_SDA;
+
+always_comb 
+begin : o_logic_For_SimRead
+    case(ps)
+        I2C_READ_TRANSFER: simRead = '1;
+        default          : simRead = '0;
+    endcase
+end 
 
 endmodule

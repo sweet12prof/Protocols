@@ -31,6 +31,7 @@ interface ifa import typedefs::*; (input i_clk, i_rst);
     logic               simReadTxBit    ;
     logic               simSendRxBit    ;
     logic               ReadRxBit       ;
+    logic               simRead         ;
     //logic               o_sampleEdge    ;
 
     modport i2ctoExt (
@@ -45,7 +46,8 @@ interface ifa import typedefs::*; (input i_clk, i_rst);
                 simAckEdge,
                 simReadTxBit, 
                 simSendRxBit, 
-                ReadRxBit
+                ReadRxBit, 
+                simRead
                // sampleEdge
     );
 
@@ -61,7 +63,7 @@ interface ifa import typedefs::*; (input i_clk, i_rst);
                 simAckEdge,
                 simReadTxBit, 
                 simSendRxBit, 
-                ReadRxBit
-                //sampleEdge
+                ReadRxBit, 
+                simRead
     );
-endinterface //ifa
+endinterface
