@@ -62,98 +62,204 @@ package typedefs;
         READ, 
         WRITE, 
         COMBINED
-    } mode;
+    } tmode;
 
     //--------verification Component ------------//
-    class protoVC;
+    class protoVC;   
+        rand bit  [6:0]     tgtAddress; 
+        rand logic  [7:0]     tx_Byte_Tbl [];
+        rand logic  [7:0]     rx_Byte_Tbl [];
+        rand tmode           testMode;
+        
+        logic               sACK; 
+        logic               rxBit;
+        int i, j;
 
-        rand bit  [7:0]     tx_databyte;
-        rand bit  [7:0]     rx_databyte;
-
-        rand mode           uvc_mode;
-        rand bit            randSendBit;
+        virtual interface   ifa vif;
         
-        rand cmd            uvc_i2c_cmd;
-        logic               mACK, sACK; 
-        
-        static int i = 7;
-        virtual interface   vif;
-        
-        logic temp;
         logic [7:0] rxSample, txSample;
+        logic [7:0] temp;
+         int cbdFmtRead, cbdFmtWrite;
+
+        constraint c1{
+            tx_Byte_Tbl.size() inside {[1:20]};
+        }
+
+        constraint c2{
+            rx_Byte_Tbl.size() inside {[1:20]};
+        }
         
         function new(input virtual interface ifa aif);
-            this.vif = aif;
+            this.vif            = aif;
+            this.sACK           =  1'b0;
         endfunction 
 
-        function bit slaveAckGen();
-            @(vif.simAckEdge) begin 
-                return 1'b0;
-            end 
-        endfunction 
-
-
-        task targetSenderBits(output bit rxbit); 
-            while (i>=0;) begin 
-                @(posedge vif.simSendRxBit) begin 
-                    temp = rx_databyte[i];
-                    i--;
-                    rxbit = temp;
-                end 
-            end 
+        task  startFunc(); 
+            vif.i2c_CMD = CMD_START_COND;
         endtask 
 
-
-        task genRepeatedStart(output cmd startcmd);
-            return startcmd = CMD_START_COND;
-        endtask
-
-        task genStop(output stopcmd);
-            @(posedge vif.enNextCmd) begin 
-                stopcmd = CMD_STOP_COND;
-            end
-        endtask
-
-
-        task sampleRxBits();
-            @(posedge vif.i_clk) begin 
-                if(vif.ReadRxBit)
-                    rxSample = {rxSample, vif.o_SDA};
-            end 
-        endtask
-
-        task sampleTxBits();
-            @(posedge vif.i_clk) begin 
-                if(ifa1.simReadTxBit) begin 
-                    txSample = {tx_data[6:0], vif.o_SDA};
-                end
-            end 
+        task stopFunc(); 
+            vif.i2c_CMD = CMD_STOP_COND;
         endtask 
 
-        task verifySampling();
-            @(vif.currCmd == I2C_MASTER_ACK) begin 
-                repeat(2) @(posedge vif.i_clk);
-                if(vif.currCmd == I2C_MASTER_ACK) begin 
-                    if(rx_databyte == rxSample) 
-                        $display("Controller Receive Suceeded");
-                    else 
-                        $display("Controller Receive Failed");
-                end 
+        function bit slaveFunc(); 
+            return sACK;
+        endfunction
+
+        task  performRead(ref logic rxBit); 
+            j                   =  7;   
+            cbdFmtRead          =  rx_Byte_Tbl.size();
+            @(posedge vif.enNextCmd); 
+                vif.i2c_CMD = CMD_READ_TRANSFER;
+            for (i=0; i <cbdFmtRead+1; i++) begin 
+                temp = rx_Byte_Tbl[i];
+                $display("temp is %d", temp);
+                        while(j >= 0) begin 
+                            rxBit = temp[j];
+                              @(posedge vif.simSendRxBit);
+                              j = j -1;
+                               @(posedge vif.i_clk);
+                        end
+                        @(posedge vif.i_clk);
+                j = 7;
+               @(posedge vif.enNextCmd); 
             end 
-        endtask 
-
-
-        task verifyDriving();
-            @(negedge vif.simAckEdge);
-            if(txSample == tx_databyte) begin 
-                $display("Controller Transmit Suceeded");
-            else    
-                $display("Controller Transmit Failed");
-            end 
-        endtask
-        
-   
-
-       
-    endclass //protocolsVC
+            @(posedge vif.enNextCmd); stopFunc();
+        endtask        
+    endclass
 endpackage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // function bit slaveAckGen();
+        //     @(vif.simAckEdge) begin 
+        //         return 1'b0;
+        //     end 
+        // endfunction 
+
+
+
+        // task targetSenderBits(output bit rxbit); 
+        //     int i=7;
+        //     while (i>=0;) begin 
+        //         @(posedge vif.simSendRxBit) begin 
+        //             temp = rx_databyte[i];
+        //             i--;
+        //             rxbit = temp;
+        //         end 
+        //     end 
+        // endtask 
+
+
+        // task genRepeatedStart(output cmd startcmd);
+        //     return startcmd = CMD_START_COND;
+        // endtask
+
+        // task genStop(output stopcmd);
+        //     @(posedge vif.enNextCmd) begin 
+        //         stopcmd = CMD_STOP_COND;
+        //     end
+        // endtask
+
+
+        // task sampleRxBits();
+        //     @(posedge vif.i_clk) begin 
+        //         if(vif.ReadRxBit)
+        //             rxSample = {rxSample, vif.o_SDA};
+        //     end 
+        // endtask
+
+        // task sampleTxBits();
+        //     @(posedge vif.i_clk) begin 
+        //         if(ifa1.simReadTxBit) begin 
+        //             txSample = {tx_data[6:0], vif.o_SDA};
+        //         end
+        //     end 
+        // endtask 
+
+        // task verifySampling();
+        //     @(vif.currCmd == I2C_MASTER_ACK) begin 
+        //         repeat(2) @(posedge vif.i_clk);
+        //         if(vif.currCmd == I2C_MASTER_ACK) begin 
+        //             if(rx_databyte == rxSample) 
+        //                 $display("Controller Receive Suceeded");
+        //             else 
+        //                 $display("Controller Receive Failed");
+        //         end 
+        //     end 
+        // endtask 
+
+
+        // task verifyDriving();
+        //     @(negedge vif.simAckEdge) begin 
+        //         if(txSample == tx_databyte) begin 
+        //             $display("Controller Transmit Suceeded");
+        //         else    
+        //             $display("Controller Transmit Failed");
+        //         end 
+        //     end
+        // endtask
+        
+
+        // task READ_CMD();
+        //     @(posedge vif.i_clk);
+        //     if(vif.currCmd != I2C_IDLE)
+        //         vif.i2c_CMD = CMD_STOP_COND;
+        //     else 
+        //         vif.i2c_CMD = CMD_START_COND; 
+            
+        //     @(vif.enNextCmd);
+        //         vif.i2c_CMD = CMD_READ_TRANSFER;
+        // endtask
+
+
+        // task WRITE_CMD();
+        //     @(posedge vif.i_clk);
+        //         if(vif.currCmd != I2C_IDLE)
+        //             vif.i2c_CMD = CMD_STOP_COND;
+        //         else 
+        //             vif.i2c_CMD = CMD_START_COND; 
+        //     @(vif.enNextCmd);
+        //         vif.i2c_CMD = CMD_WRITE_TRANSFER;
+        // endtask
+
+
+        // task COMBINED_CMD();
+        //      @(posedge vif.i_clk) begin 
+        //         if(vif.currCmd != I2C_IDLE)
+        //             vif.i2c_CMD = CMD_STOP_COND;
+        //         else 
+        //             vif.i2c_CMD = CMD_START_COND; 
+        //      end 
+
+        //      @(vif.enNextCmd) begin 
+        //         for(int j=0; j<cbdFmtWrite; j++)
+
+        //      end 
+        // endtask
+   

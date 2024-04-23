@@ -32,7 +32,6 @@ interface ifa import typedefs::*; (input i_clk, i_rst);
     logic               simSendRxBit    ;
     logic               ReadRxBit       ;
     logic               simRead         ;
-    //logic               o_sampleEdge    ;
 
     modport i2ctoExt (
         inout   o_SDA,
@@ -48,7 +47,6 @@ interface ifa import typedefs::*; (input i_clk, i_rst);
                 simSendRxBit, 
                 ReadRxBit, 
                 simRead
-               // sampleEdge
     );
 
     modport exttoi2c(
