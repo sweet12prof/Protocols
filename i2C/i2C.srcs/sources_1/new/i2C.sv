@@ -187,7 +187,7 @@ always_comb begin : ns_logic_sda_scl
                         sda_ns          = '1;                                 // IF We are to stop readig send NACK NB: could be repeated start     
                 end  
                 else begin 
-                    readByteNS      = readBytePS;
+                    readByteNS          = readBytePS;
                     sda_ns              = sda_ps;
                     scl_ns              = scl_ps;
                 end 

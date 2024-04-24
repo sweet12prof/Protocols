@@ -109,21 +109,18 @@ package typedefs;
             return rx_Byte_Tbl[i];
         endfunction
 
-        task  performRead(ref logic rxBit); 
+        task  performRead(ref logic rxBit, ref int i); 
             @(posedge vif.enNextCmd); 
                 vif.i2c_CMD = CMD_READ_TRANSFER;
-            for(int i=0; i < $size(rx_Byte_Tbl); i++ )begin 
+            for(i=0; i < $size(rx_Byte_Tbl); i++ )begin 
                     @(posedge vif.simSendRxBit);
                     temp2 = returnElement(i);
                             for(j = 7; j>=0; j--) begin 
-                                $display("j is %d", j);
                                 rxBit = temp2[j];
                                 @( posedge vif.simSendRxBit);
                             end
-                        @(negedge vif.simAckEdge);
-                            assertRxSample(i);
                 end 
-            @(posedge vif.enNextCmd); stopFunc();
+             if(i == rx_Byte_Tbl.size()); begin  stopFunc(); end 
         endtask       
 
         task sampleReadBits ();
@@ -134,12 +131,20 @@ package typedefs;
            end 
         endtask 
 
-        function void assertRxSample(input int i); 
-            ASSERTRXSAMPLE: assert(rxSample == rx_Byte_Tbl[i]) 
-                $info("I2C Read Successful"); 
-            else 
-                $erroe("I2C Read Failure");
-        endfunction
+        task assertRxSample(ref int i); 
+            time t;
+            @(vif.currCmd == I2C_MASTER_ACK) begin 
+                repeat(2) begin @(posedge vif.i_clk); end 
+                if (vif.currCmd == I2C_MASTER_ACK) begin 
+                    ASSERTRXSAMPLE: assert(rxSample == rx_Byte_Tbl[i]) 
+                        $display("I2C Read Successful"); 
+                    else begin 
+                        t = $time;
+                        $display("I2C Read Failure at time: %t \n rx_Sample : %h \t Table[%d]: %h", t, rxSample, i, rx_Byte_Tbl[i]);
+                    end 
+                end
+            end 
+        endtask
     endclass
 endpackage
 
