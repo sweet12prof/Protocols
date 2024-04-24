@@ -24,7 +24,7 @@ module testbench import typedefs::*;(
     ifa ifa1
 );
     protoVC uvc = new(ifa1);
-    logic rxBit;
+    logic rxBit, temp;
     // logic driveOut;
     // logic [7:0] tx_data, rx_data, randGen;
 
@@ -116,7 +116,7 @@ module testbench import typedefs::*;(
         ifa1.i_MasterByte   =  8'h0b;
         #22;
         uvc.performRead(rxBit);
-
+       // uvc.printarrElements();
 
     end 
 

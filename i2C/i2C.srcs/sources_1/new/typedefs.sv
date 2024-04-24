@@ -78,9 +78,9 @@ package typedefs;
         virtual interface   ifa vif;
         
         logic [7:0] rxSample, txSample;
-        logic [7:0] temp;
+       // logic [7:0] temp;
          int cbdFmtRead, cbdFmtWrite;
-
+         logic [7:0] temp2;
         constraint c1{
             tx_Byte_Tbl.size() inside {[1:20]};
         }
@@ -106,23 +106,35 @@ package typedefs;
             return sACK;
         endfunction
 
+        function logic [7:0] returnElement(input int i);
+            return rx_Byte_Tbl[i];
+        endfunction
+
+        // function void printarrElements();
+       
+        //     foreach(rx_Byte_Tbl[i]) begin 
+        //         temp2 = rx_Byte_Tbl[i];
+        //         $display("Element i is %h", temp2);
+        //         for(j=7; j >= 0; j--)
+        //             $display("bits are %b", temp2[j]);
+
+        //     end 
+    //    endfunction
+
         task  performRead(ref logic rxBit); 
             j                   =  7;   
-            cbdFmtRead          =  rx_Byte_Tbl.size();
             @(posedge vif.enNextCmd); 
                 vif.i2c_CMD = CMD_READ_TRANSFER;
-            for (i=0; i <cbdFmtRead+1; i++) begin 
-                temp = rx_Byte_Tbl[i];
-                $display("temp is %d", temp);
-                        while(j >= 0) begin 
-                            rxBit = temp[j];
-                              @(posedge vif.simSendRxBit);
-                              j = j -1;
-                               @(posedge vif.i_clk);
+          for(int i=0; i < $size(rx_Byte_Tbl); i++ )begin 
+                 @(posedge vif.simSendRxBit);
+                temp2 = returnElement(i);
+                        for(j = 7; j>=0; j--) begin 
+                            $display("j is %d", j);
+                            rxBit = temp2[j];
+                              @( posedge vif.simSendRxBit);
                         end
-                        @(posedge vif.i_clk);
-                j = 7;
-               @(posedge vif.enNextCmd); 
+               // @(posedge vif.enNextCmd);
+                //$display("j is %d", j);
             end 
             @(posedge vif.enNextCmd); stopFunc();
         endtask        
