@@ -124,6 +124,11 @@ module testbench import typedefs::*;(
         @(posedge uvc.vif.simSendRxBit); 
         $display("rx bit is %d", rxBit );
     end
+
+
+    always begin 
+        sampleReadBits();
+    end 
     assign ifa1.o_SDA = (ifa1.simAckEdge) ? uvc.slaveFunc() : 'Z;
 
     assign ifa1.o_SDA = (ifa1.simRead) ? rxBit : 'Z;

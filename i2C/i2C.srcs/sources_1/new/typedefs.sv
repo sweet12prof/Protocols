@@ -78,9 +78,8 @@ package typedefs;
         virtual interface   ifa vif;
         
         logic [7:0] rxSample, txSample;
-       // logic [7:0] temp;
-         int cbdFmtRead, cbdFmtWrite;
-         logic [7:0] temp2;
+        logic [7:0] temp2;
+        
         constraint c1{
             tx_Byte_Tbl.size() inside {[1:20]};
         }
@@ -110,34 +109,37 @@ package typedefs;
             return rx_Byte_Tbl[i];
         endfunction
 
-        // function void printarrElements();
-       
-        //     foreach(rx_Byte_Tbl[i]) begin 
-        //         temp2 = rx_Byte_Tbl[i];
-        //         $display("Element i is %h", temp2);
-        //         for(j=7; j >= 0; j--)
-        //             $display("bits are %b", temp2[j]);
-
-        //     end 
-    //    endfunction
-
         task  performRead(ref logic rxBit); 
-            j                   =  7;   
             @(posedge vif.enNextCmd); 
                 vif.i2c_CMD = CMD_READ_TRANSFER;
-          for(int i=0; i < $size(rx_Byte_Tbl); i++ )begin 
-                 @(posedge vif.simSendRxBit);
-                temp2 = returnElement(i);
-                        for(j = 7; j>=0; j--) begin 
-                            $display("j is %d", j);
-                            rxBit = temp2[j];
-                              @( posedge vif.simSendRxBit);
-                        end
-               // @(posedge vif.enNextCmd);
-                //$display("j is %d", j);
-            end 
+            for(int i=0; i < $size(rx_Byte_Tbl); i++ )begin 
+                    @(posedge vif.simSendRxBit);
+                    temp2 = returnElement(i);
+                            for(j = 7; j>=0; j--) begin 
+                                $display("j is %d", j);
+                                rxBit = temp2[j];
+                                @( posedge vif.simSendRxBit);
+                            end
+                        @(negedge vif.simAckEdge);
+                            assertRxSample(i);
+                end 
             @(posedge vif.enNextCmd); stopFunc();
-        endtask        
+        endtask       
+
+        task sampleReadBits ();
+           @(posedge vif.i_clk) begin 
+                if(vif.ReadRxBit) begin 
+                    rxSample = {rxSample[6:0], vif.o_SDA};
+                end 
+           end 
+        endtask 
+
+        function void assertRxSample(input int i); 
+            ASSERTRXSAMPLE: assert(rxSample == rx_Byte_Tbl[i]) 
+                $info("I2C Read Successful"); 
+            else 
+                $erroe("I2C Read Failure");
+        endfunction
     endclass
 endpackage
 
