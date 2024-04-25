@@ -119,24 +119,27 @@ module testbench import typedefs::*;(
         ifa1.i_MasterByte   =  8'h0b;
         #22;
         uvc.performRead(rxBit, i);
-       // uvc.printarrElements();
-
+        // repeat(10) begin @(posedge ifa1.i_clk); end 
+        @(ifa1.currCmd == I2C_STOP_COND);
+        @(ifa1.currCmd == I2C_IDLE);
+          uvc.startFunc();
+          @(posedge ifa1.enNextCmd);
+          uvc.performWrite();
     end 
-
-    // always begin 
-    //     @(posedge uvc.vif.simSendRxBit); 
-    //     $display("rx bit is %d", rxBit );
-    // end
-
 
     always begin 
         uvc.sampleReadBits();
     end 
 
     always begin 
+        uvc.sampleWriteBits();
+    end 
+
+    always begin 
         j = i;
         uvc.assertRxSample(j);
     end
+
     assign ifa1.o_SDA = (ifa1.simAckEdge) ? uvc.slaveFunc() : 'Z;
 
     assign ifa1.o_SDA = (ifa1.simRead) ? rxBit : 'Z;

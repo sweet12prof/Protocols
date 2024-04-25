@@ -274,10 +274,10 @@ always_comb begin : ns_logic_sda_scl
         end  
 
         I2C_MASTER_ACK :begin 
-            readByteNS       = readBytePS;
-            simAckEdgeNS    = '0;
-            simSendRxBitNS  = '0;
-                ACK_BIT_NS     = '0;
+            readByteNS        = readBytePS;
+            simAckEdgeNS      = '0;
+            simSendRxBitNS    = '0;
+                ACK_BIT_NS    = '0;
                 if(cntCurr == CLOCK_PER_HALF_BIT - 1 ) begin
                         sda_ns          = sda_ps; 
                         scl_ns          = ~scl_ps;

@@ -118,9 +118,11 @@ package typedefs;
                             for(j = 7; j>=0; j--) begin 
                                 rxBit = temp2[j];
                                 @( posedge vif.simSendRxBit);
+                                if( i == rx_Byte_Tbl.size()-1 )
+                                    stopFunc();
                             end
                 end 
-             if(i == rx_Byte_Tbl.size()); begin  stopFunc(); end 
+            
         endtask       
 
         task sampleReadBits ();
@@ -143,6 +145,34 @@ package typedefs;
                         $display("I2C Read Failure at time: %t \n rx_Sample : %h \t Table[%d]: %h", t, rxSample, i, rx_Byte_Tbl[i]);
                     end 
                 end
+            end 
+        endtask
+        
+        task performWrite();
+                vif.i2c_CMD = CMD_WRITE_TRANSFER;
+            for(i=0; i < $size(tx_Byte_Tbl); i++ )begin 
+                @(posedge vif.enNextCmd)
+                    vif.i_MasterByte = tx_Byte_Tbl[i];
+                    @(negedge vif.simAckEdge);
+                    assertTxSample(i);
+            end 
+             if(i == tx_Byte_Tbl.size()); begin  stopFunc(); end 
+        endtask
+
+        task sampleWriteBits();
+            @(posedge vif.i_clk) begin 
+                if(vif.simReadTxBit) 
+                    txSample = {txSample[6:0], vif.o_SDA };
+            end 
+        endtask
+
+        task assertTxSample(ref int i);
+            time t;
+            @( negedge vif.simAckEdge) begin 
+                if(txSample == tx_Byte_Tbl[i])
+                    $display("I2C Write Successful");
+                else  
+                    $display("I2C Write Failure at time: %t \n tx_Sample : %h \t Table[%d]: %h", t, txSample, i, tx_Byte_Tbl[i]);
             end 
         endtask
     endclass
